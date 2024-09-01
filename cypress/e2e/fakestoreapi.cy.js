@@ -21,4 +21,12 @@ describe('Lista de produtos Fake Store', () => {
     })
   })
 
+  it('[GET products] Validate the quantity of products per category', () => {
+    cy.getProducts().then((response) => {
+      expect(response.status).to.equal(200);
+      const countProduct = productsActions.countProductsByCategory(response.body, "electronics");
+      expect(countProduct).to.be.greaterThan(4);
+    })
+  })
+
 })
