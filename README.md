@@ -1,7 +1,8 @@
-# Desafio Teste de API
-O desafio consiste em validar a API de produtos da fakestoreapi
+# Technical automation test
 
-###Desafio:
+Create an automated API test using any JS framework or library
+
+### Challenge:
 
 1) Call https://fakestoreapi.com/products
 2) Read the response, find all objects with property “electronics”
@@ -10,5 +11,20 @@ O desafio consiste em validar a API de produtos da fakestoreapi
 5) Verify the number of objects with the property above appears with rate bigger than 4
 6) Finally print found objects to console
 
+### Framework:
+ - Cypress 13.14.1
 
+### Languages:
+ - Javascript
+ - Joi
 
+## Installation:
+After downloading the project from GitHub, open the terminal and run the command below
+> npm install
+
+## Execution:
+To run the project via terminal looking at the production environment settings, run the command below
+> npm run test-prod
+
+To run the project by opening cypress looking at the production environment settings run the command below
+> npm run test-open-prod
