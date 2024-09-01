@@ -1,0 +1,25 @@
+{
+  "name": "desafiotec-brilliantmachine",
+  "version": "1.0.0",
+  "description": "Projeto de automação de teste para vaga de QA da Brilliant Machine",
+  "main": "index.js",
+  "scripts": {
+    "test-prod": "npx cypress run --config-file cypress/config/fakestoreProd.js",
+    "test-open-prod": "npx cypress open --config-file cypress/config/fakestoreProd.js",
+    "test": "npx cypress run"
+  },
+  "keywords": [
+    "testApi",
+    "desafiotec",
+    "brilliantMachine",
+    "testeUi"
+  ],
+  "author": "Jessica F. Magalhaes",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.14.1"
+  },
+  "dependencies": {
+    "joi": "^17.13.3"
+  }
+}
