@@ -1,7 +1,7 @@
 
 
 function getProductsByCategory(listProducts, category) {
-    const newListProducts = [];
+    let newListProducts = [];
 
     listProducts.forEach(object => {
         if (object.category === category) {
@@ -11,15 +11,15 @@ function getProductsByCategory(listProducts, category) {
     return newListProducts
 }
 
-function validateProductsListByCategory(listProducts, category) {
+function countProductsByCategory(listProducts, category) {
+    let numProducts = 0;
     listProducts.forEach(object => {
         if (object.category === category) {
-            newListProducts.push(object)
+            numProducts = ++numProducts
         }
     });
-    console.log(newListProducts)
-    return newListProducts
+    return numProducts
 
 }
 
-module.exports = { getProductsByCategory }
+module.exports = { getProductsByCategory, countProductsByCategory }
