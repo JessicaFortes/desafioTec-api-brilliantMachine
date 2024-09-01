@@ -1,5 +1,5 @@
 # Desafio Teste de API
-O desafio consiste e validar a API de produtos da fakestoreapi
+O desafio consiste em validar a API de produtos da fakestoreapi
 
 ###Desafio:
 
