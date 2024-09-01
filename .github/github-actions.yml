@@ -1,6 +1,11 @@
 name: automation-test-api
 
-on: [push]
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    
 jobs:
   acceptance-tests:
     runs-on: ubuntu-latest
