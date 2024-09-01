@@ -1,4 +1,4 @@
-let urlProducts = Cypress.env("baseUrl") + "/products";
+const urlProducts = Cypress.env("baseUrl") + "/products";
 
 Cypress.Commands.add("getProducts", () => {
   console.log(urlProducts);
